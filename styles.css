@@ -52,12 +52,18 @@ header {
     position: relative;
 }
 
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .header-logo {
     max-width: 140px;
     width: 100%;
     height: auto;
-    margin-bottom: 16px;
     display: block;
+    flex-shrink: 0;
 }
 
 header h1 {
@@ -65,6 +71,7 @@ header h1 {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 8px;
+    flex: 1;
 }
 
 .subtitle {
@@ -104,6 +111,80 @@ main {
     margin-bottom: 48px;
     max-width: 85%;
     line-height: 1.5;
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 48px;
+}
+
+.intro-section {
+    background: var(--light-gray);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.intro-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.intro-section > p {
+    font-size: 16px;
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.intro-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.intro-list li {
+    font-size: 16px;
+    color: var(--text-primary);
+    line-height: 1.8;
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.intro-list li:last-child {
+    margin-bottom: 0;
+}
+
+.intro-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.intro-list li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+}
+
+.intro-list li a:hover {
+    text-decoration: underline;
+}
+
+.intro-list li strong {
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 .file-format-info {
@@ -1162,6 +1243,17 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .header-logo {
+        align-self: flex-end;
+        max-width: 100px;
+    }
+
     header h1 {
         font-size: 36px;
     }
@@ -1172,6 +1264,27 @@ footer p {
 
     .guideline-section h2 {
         font-size: 28px;
+    }
+
+    .intro-content {
+        gap: 24px;
+    }
+
+    .intro-section {
+        padding: 24px;
+    }
+
+    .intro-section h3 {
+        font-size: 18px;
+    }
+
+    .intro-section > p,
+    .intro-list li {
+        font-size: 15px;
+    }
+
+    .intro-list li::before {
+        font-size: 15px;
     }
 
     .color-grid,

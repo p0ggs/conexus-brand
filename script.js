@@ -284,3 +284,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Smooth scrolling for intro list links
+document.addEventListener('DOMContentLoaded', function() {
+    const introLinks = document.querySelectorAll('.intro-list a');
+    
+    introLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                const header = document.querySelector('header');
+                const tabNav = document.getElementById('tabNavigation');
+                const headerHeight = header ? header.offsetHeight : 0;
+                const tabNavHeight = tabNav ? tabNav.offsetHeight : 0;
+                const offsetTop = targetSection.offsetTop - headerHeight - tabNavHeight - 20;
+                
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
