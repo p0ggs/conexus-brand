@@ -1,16 +1,16 @@
 # Conexus Brand Guidelines Web Application
 
-A beautiful, comprehensive web application for displaying Conexus brand guidelines and downloading brand assets. This application has been customized based on the Conexus brand guidelines PDF.
+A comprehensive web application for displaying Conexus brand guidelines and downloading brand assets.
 
 ## Features
 
-- **Brand Colors**: Interactive Conexus color palette (Conexus Dark, Ebony, Conexus Light) with click-to-copy color codes, including CMYK values
+- **Brand Colors**: Interactive Conexus color palette (Conexus Dark, Conexus Light, Ebony) with click-to-copy color codes, including CMYK values
 - **Typography**: Complete typography system featuring Lato (primary), Crimson Pro (secondary), and Julius Sans One (logo only)
-- **Logo Guidelines**: Display of all logo variations (light, dark, color, texture) with spacing requirements
+- **Logo Guidelines**: Display of all logo variations (colour, light, dark,) with spacing requirements
 - **Identity Shapes**: Showcase of shapes from negative "X" spaces
-- **Textures & Gradients**: Visual guide for texture and gradient usage
+- **Textures & Backgrounds**: Visual guide for texture and background usage
 - **Asset Downloads**: Easy download functionality for all brand assets
-- **Responsive Design**: Works beautifully on desktop, tablet, and mobile devices
+- **Responsive Design**: Works on desktop, tablet, and mobile devices
 
 ## Setup
 
@@ -24,7 +24,7 @@ A beautiful, comprehensive web application for displaying Conexus brand guidelin
    - Texture files (gradient and abstract)
    - Asset packages (logo-pack.zip, etc.)
 
-3. **Content is Pre-configured**: The application has been customized with:
+3. **Content is Pre-configured**: The application has been customised with:
    - Conexus brand colors (#3b306a, #151833, #dbebfa)
    - Typography system (Lato, Crimson Pro, Julius Sans One)
    - Logo specifications and spacing requirements
@@ -53,7 +53,7 @@ A beautiful, comprehensive web application for displaying Conexus brand guidelin
 ├── script.js           # JavaScript for downloads and interactions
 ├── assets/             # Brand assets folder
 │   ├── README.md       # Assets documentation
-│   └── [your assets]   # Place your brand files here
+│   └── [your assets]   # Brand files here
 └── README.md           # This file
 ```
 
@@ -71,7 +71,7 @@ A beautiful, comprehensive web application for displaying Conexus brand guidelin
 - **Logo**: Julius Sans One (Regular) - Logo only, not for text
 
 ### Logo Requirements
-- Minimum spacing: 42px around logo in all directions
+- Minimum spacing: 3rem / 42px around logo in all directions
 - Logo consists of "CONEXUS" (Julius Sans One) and "Wealth" (Crimson Pro)
 - Extended "X" links the two words
 - Shapes in negative "X" spaces for flexible use
@@ -97,7 +97,6 @@ If you need to modify the application:
 - Ensure all asset files are properly optimized for web use
 - The color code copy functionality uses the Clipboard API with fallback support
 
-## License
+## Support
 
-Customize this template for your brand needs.
-
+- Email hello@pog.gs with any queries or issues
