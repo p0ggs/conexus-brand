@@ -59,11 +59,12 @@ header {
 }
 
 .header-logo {
-    max-width: 140px;
+    max-width: 100px;
     width: 100%;
     height: auto;
     display: block;
     flex-shrink: 0;
+    margin-top: -8px;
 }
 
 header h1 {
@@ -86,9 +87,13 @@ main {
     padding-bottom: 96px;
 }
 
+main.container {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
 .guideline-section {
     margin-bottom: 64px;
-    padding: 0 8px;
     padding-top: 64px;
     border-top: 1px solid var(--border-color);
 }
@@ -1280,6 +1285,11 @@ footer p {
         font-size: 14px;
     }
 
+    main.container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     .guideline-section {
         scroll-margin-top: 64px;
     }
@@ -1294,7 +1304,8 @@ footer p {
 
     .header-logo {
         align-self: flex-end;
-        max-width: 100px;
+        max-width: 80px;
+        margin-top: 0;
     }
 
     header h1 {
