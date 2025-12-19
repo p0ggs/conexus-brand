@@ -1160,6 +1160,49 @@ footer {
     border-top: 1px solid var(--border-color);
 }
 
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 56px;
+    height: 56px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.back-to-top.visible {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.15);
+}
+
+.back-to-top:active {
+    transform: translateY(-2px);
+}
+
+.back-to-top svg {
+    width: 24px;
+    height: 24px;
+}
+
 footer p {
     text-align: center;
     color: var(--text-secondary);
@@ -1285,6 +1328,18 @@ footer p {
 
     .intro-list li::before {
         font-size: 15px;
+    }
+
+    .back-to-top {
+        width: 48px;
+        height: 48px;
+        bottom: 24px;
+        right: 24px;
+    }
+
+    .back-to-top svg {
+        width: 20px;
+        height: 20px;
     }
 
     .color-grid,

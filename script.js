@@ -310,3 +310,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Back to Top Button
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.getElementById('backToTop');
+    
+    if (!backToTopButton) return;
+    
+    // Show/hide button based on scroll position
+    function toggleBackToTopButton() {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    }
+    
+    // Scroll to top when button is clicked
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    
+    // Check scroll position on scroll
+    window.addEventListener('scroll', toggleBackToTopButton);
+    
+    // Initial check
+    toggleBackToTopButton();
+});
+
