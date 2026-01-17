@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header id="top">
         <div class="container">
             <div class="header-content">
                 <h1>Conexus <span style="font-weight: 100">Brand Guidelines</span></h1>
@@ -24,6 +24,9 @@
     <!-- Horizontal Tab Navigation -->
     <nav class="tab-navigation" id="tabNavigation">
         <div class="container">
+            <a href="#top" class="nav-logo-link" aria-label="Back to top">
+                <img src="assets/Conexus-logo-colour-dark.png" alt="Conexus Wealth logo" class="nav-logo" loading="lazy">
+            </a>
             <ul class="tab-menu">
                 <li><a href="#introduction" class="tab-link active">Introduction</a></li>
                 <li><a href="#logo" class="tab-link">Logo</a></li>
@@ -47,11 +50,16 @@
                     <p>This guide website is your one-stop resource for all Conexus Wealth brand assets and specifications. It provides:</p>
                     <ul class="intro-list">
                         <li><a href="#logo"><strong>Logo files</strong></a> in different formats and colour variations for various uses</li>
-                        <li><a href="#brand-colors"><strong>Brand colours</strong></a> with exact colour codes (HEX, RGB, CMYK) to can copy and use</li>
+                        <li><a href="#brand-colors"><strong>Brand colours</strong></a> with exact colour codes (HEX, RGB, CMYK) to copy</li>
                         <li><a href="#typography"><strong>Typography guidelines</strong></a> detailing which fonts to use, with download links</li>
-                        <li><a href="#textures"><strong>Textures & backgrounds (coming soon)</strong></a> to enhance brand styling</li>
-                        <li><a href="#application"><strong>Application examples (coming soon)</strong></a> showing examples of how the brand should be applied</li>
+                        <li><a href="#textures"><strong>Textures & backgrounds</strong></a> to enhance brand styling</li>
+                        <li><a href="#application"><strong>Application (coming soon)</strong></a> showing examples of how the brand could be applied to merchandise</li>
                     </ul>
+                </div>
+            <div>
+            <h3 style="margin-bottom: 12px;">Primary Brand Composition</h3>
+            <p class="section-description">This is the primary brand style; comprising the light gradient logo and dark purple "wave" background pattern.</p>
+                    <img src="assets/conexus-logo-comp.png" alt="Conexus Wealth primary brand composition" class="proportions-image primary-composition-image">
                 </div>
             </div>
         </section>
@@ -113,16 +121,105 @@
                 </div>
             </div>
             
-            <h3 style="margin-top: 48px; margin-bottom: 24px;">Logo Proportions & Spacing</h3>
-            <p class="section-description">The logo has been aligned with a baseline grid, ensuring a minimum spacing of 3rem (48px at 16px base) between the logo and surrounding artwork in all directions. This spacing is the <strong>minimum</strong> requirement, but can be increased as needed.</p>
+            <h3 style="margin-top: 48px; margin-bottom: 12px;">Logo Proportions & Spacing</h3>
+            <p class="section-description">The logo has been aligned with a baseline grid, using the <strong>“W”</strong> from the logo as the reference unit for scaling and spacing. Maintain clear space around the logo equal to the height of the “W” on all sides.</p>
             <div class="proportions-visual">
-                <img src="assets/logo-proportions.png" alt="Conexus Wealth Logo Proportions and Spacing Guide" class="proportions-image">
+                <img src="assets/Conexus-logo-spacing.png" alt="Conexus Wealth Logo Spacing Guide (W-based reference)" class="proportions-image">
             </div>
             
-            <h3 style="margin-top: 48px; margin-bottom: 24px;">Identity Shapes</h3>
-            <p class="section-description">The shapes in the negative "X" spaces can be used flexibly as background elements or as points of interest.</p>
-            <div class="identity-shapes-placeholder">
-                <div class="coming-soon-banner section-banner">Coming Soon</div>
+            <h3 style="margin-top: 48px; margin-bottom: 12px;">Ident Shapes</h3>
+            <p class="section-description">The shapes in the negative "X" spaces in the logo can be used flexibly as background elements or as points of interest.</p>
+            <div class="identity-shapes">
+                <div class="shape-item">
+                    <div class="shape-preview">
+                        <img src="assets/conexus-ident-1.jpg" alt="Identity shape 1" loading="lazy">
+                    </div>
+                    <div class="shape-downloads">
+                        <button class="download-btn" data-asset="conexus-ident-1.png">Download PNG</button>
+                        <button class="download-btn" data-asset="conexus-ident-1.svg">Download SVG</button>
+                    </div>
+                </div>
+                <div class="shape-item">
+                    <div class="shape-preview">
+                        <img src="assets/conexus-ident-2.jpg" alt="Identity shape 2" loading="lazy">
+                    </div>
+                    <div class="shape-downloads">
+                        <button class="download-btn" data-asset="conexus-ident-2.png">Download PNG</button>
+                        <button class="download-btn" data-asset="conexus-ident-2.svg">Download SVG</button>
+                    </div>
+                </div>
+                <div class="shape-item">
+                    <div class="shape-preview">
+                        <img src="assets/conexus-ident-3.jpg" alt="Identity shape 3" loading="lazy">
+                    </div>
+                    <div class="shape-downloads">
+                        <button class="download-btn" data-asset="conexus-ident-3.png">Download PNG</button>
+                        <button class="download-btn" data-asset="conexus-ident-3.svg">Download SVG</button>
+                    </div>
+                </div>
+                <div class="shape-item">
+                    <div class="shape-preview">
+                        <img src="assets/conexus-ident-4.jpg" alt="Identity shape 4" loading="lazy">
+                    </div>
+                    <div class="shape-downloads">
+                        <button class="download-btn" data-asset="conexus-ident-4.png">Download PNG</button>
+                        <button class="download-btn" data-asset="conexus-ident-4.svg">Download SVG</button>
+                    </div>
+                </div>
+                <div class="shape-item">
+                    <div class="shape-preview">
+                        <img src="assets/conexus-ident-5.jpg" alt="Identity shape 5" loading="lazy">
+                    </div>
+                    <div class="shape-downloads">
+                        <button class="download-btn" data-asset="conexus-ident-5.png">Download PNG</button>
+                        <button class="download-btn" data-asset="conexus-ident-5.svg">Download SVG</button>
+                    </div>
+                </div>
+                <div class="shape-item">
+                    <div class="shape-preview">
+                        <img src="assets/conexus-ident-6.jpg" alt="Identity shape 6" loading="lazy">
+                    </div>
+                    <div class="shape-downloads">
+                        <button class="download-btn" data-asset="conexus-ident-6.png">Download PNG</button>
+                        <button class="download-btn" data-asset="conexus-ident-6.svg">Download SVG</button>
+                    </div>
+                </div>
+                <div class="shape-item">
+                    <div class="shape-preview">
+                        <img src="assets/conexus-ident-7.jpg" alt="Identity shape 7" loading="lazy">
+                    </div>
+                    <div class="shape-downloads">
+                        <button class="download-btn" data-asset="conexus-ident-7.png">Download PNG</button>
+                        <button class="download-btn" data-asset="conexus-ident-7.svg">Download SVG</button>
+                    </div>
+                </div>
+                <div class="shape-item">
+                    <div class="shape-preview">
+                        <img src="assets/conexus-ident-8.jpg" alt="Identity shape 8" loading="lazy">
+                    </div>
+                    <div class="shape-downloads">
+                        <button class="download-btn" data-asset="conexus-ident-8.png">Download PNG</button>
+                        <button class="download-btn" data-asset="conexus-ident-8.svg">Download SVG</button>
+                    </div>
+                </div>
+            </div>
+            <div class="identity-usage">
+                <h3 style="margin-top: 32px; margin-bottom: 8px;">Usage Examples</h3>
+                <p class="section-description">Some examples of different styles to use with ident shapes.</p>
+                <div class="identity-usage-row">
+                    <div class="identity-usage-item">
+                        <img src="assets/conexus-ident-7-1.jpg" alt="Identity shape usage example 1" loading="lazy">
+                    </div>
+                    <div class="identity-usage-item">
+                        <img src="assets/conexus-ident-7-2.jpg" alt="Identity shape usage example 2" loading="lazy">
+                    </div>
+                    <div class="identity-usage-item">
+                        <img src="assets/conexus-ident-7-3.jpg" alt="Identity shape usage example 3" loading="lazy">
+                    </div>
+                    <div class="identity-usage-item">
+                        <img src="assets/conexus-ident-7-4.jpg" alt="Identity shape usage example 4" loading="lazy">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -344,7 +441,7 @@
                 </div>
             </div>
             
-            <h3 style="margin-top: 48px; margin-bottom: 24px;">Type Scale</h3>
+            <h3 style="margin-top: 48px; margin-bottom: 12px;">Type Scale</h3>
             <p class="section-description">The line height for all text is set at 125%, while the letter spacing for captions is adjusted to 4%.</p>
             <div class="typography-examples">
                 <div class="type-sample">
@@ -411,8 +508,18 @@
             <h2>Textures & Backgrounds</h2>
             <p class="section-description">Abstract, "flowing" vector shapes, with colour and gradient overlays, form a subtle textured background that enriches the brand logo. Ideal for adding colour and depth to brand logos and idents. Use sparingly!</p>
             
-            <div class="section-placeholder">
-                <div class="coming-soon-banner section-banner">Coming Soon</div>
+            <div class="texture-showcase">
+                <div class="texture-item">
+                    <div class="texture-preview">
+                        <img src="assets/Conexus-BG-sm.jpg" alt="Conexus background texture (preview)" loading="lazy">
+                    </div>
+                    <div class="texture-details">
+                        <h3>Conexus Background Texture</h3>
+                        <p>Use this textured background to add subtle depth behind brand applications.</p>
+                        <button class="download-btn" data-asset="Conexus-BG.png">Download PNG (High-Res Image)</button>
+                        <button class="download-btn" data-asset="Conexus-BG.eps">Download EPS (Source File [RGB])</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -430,7 +537,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; <span id="currentYear">2025</span> Conexus Wealth Ltd. All rights reserved.</p>
+            <p>&copy; <span id="currentYear">2025</span> Conexus Wealth Ltd. All rights reserved. Design by <a href="https://pog.gs" target="_blank" rel="noopener noreferrer">Pauline H</a>.</p>
         </div>
     </footer>
 

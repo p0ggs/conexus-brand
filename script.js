@@ -189,6 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const tabNavigation = document.getElementById('tabNavigation');
     const tabLinks = document.querySelectorAll('.tab-link');
     const sections = document.querySelectorAll('.guideline-section');
+    const navLogoLink = document.querySelector('.nav-logo-link');
 
     // Make navigation sticky on scroll
     function handleStickyNav() {
@@ -224,6 +225,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    if (navLogoLink) {
+        navLogoLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 
     // Update active tab link based on scroll position
     function updateActiveTab() {
