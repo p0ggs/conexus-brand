@@ -231,6 +231,19 @@ main.container {
     font-weight: 600;
 }
 
+.file-format-info .print-note {
+    background: rgba(220, 38, 38, 0.12);
+    border-left: 4px solid rgba(220, 38, 38, 0.7);
+    border-radius: 8px;
+    padding: 14px 18px;
+    color: var(--primary-color);
+}
+
+.file-format-info .print-note a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 /* Color Grid */
 .color-grid {
     display: grid;
