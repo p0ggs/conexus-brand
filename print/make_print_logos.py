@@ -1,15 +1,18 @@
-"""Export the Conexus logo as flat CMYK vector PDFs for print.
+"""Export the Conexus logo as flat CMYK vector PDFs for print, plus RGB
+SVG/PNG versions in the matching colour for office documents.
 
 usage: make_print_logos.py <logo.svg> <out_dir>
 
 Approved print colour: C70 M90 Y0 K5 (option G on the test sheet), used flat
-for the whole logo. The RGB gradient is for screen only.
+for the whole logo. #5C377D is its sRGB equivalent, for office printing.
+The RGB gradient is for screen only.
 """
 import os
 import re
 import sys
 import xml.etree.ElementTree as ET
 
+import fitz  # pymupdf, for rasterising the office PNG
 from reportlab.lib.colors import CMYKColor
 from reportlab.pdfgen import canvas
 
@@ -19,6 +22,9 @@ OUTPUTS = [
     ("Conexus-logo-print-cmyk.pdf", (70, 90, 0, 5), "Print colour C70 M90 Y0 K5"),
     ("Conexus-logo-print-black.pdf", (0, 0, 0, 100), "Single colour K100"),
 ]
+
+OFFICE_HEX = "#5C377D"
+OFFICE_PNG_WIDTH = 2000
 
 TOKEN = re.compile(r"[MLHVCZ]|-?(?:\d+\.?\d*|\.\d+)(?:e-?\d+)?", re.I)
 
@@ -80,3 +86,19 @@ for name, value, subject in OUTPUTS:
     c.showPage()
     c.save()
     print("wrote", out)
+
+# Office versions: the same artwork, flat in the RGB equivalent of the print
+# colour, with the X triangles solid as in the print logo.
+with open(SVG_PATH) as f:
+    svg = f.read().replace('fill="white"', 'fill="{}"'.format(OFFICE_HEX))
+svg = svg.replace(' fill-opacity="0.6"', "")
+svg_out = os.path.join(OUT_DIR, "Conexus-logo-office.svg")
+with open(svg_out, "w") as f:
+    f.write(svg)
+print("wrote", svg_out)
+
+page = fitz.open(svg_out)[0]
+zoom = OFFICE_PNG_WIDTH / page.rect.width
+png_out = os.path.join(OUT_DIR, "Conexus-logo-office.png")
+page.get_pixmap(matrix=fitz.Matrix(zoom, zoom), alpha=True).save(png_out)
+print("wrote", png_out)
