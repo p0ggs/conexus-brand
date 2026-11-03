@@ -6,7 +6,7 @@ A comprehensive web application for displaying Conexus brand guidelines and down
 
 - **Brand Colors**: Interactive Conexus color palette (Conexus Dark, Conexus Light, Ebony) with click-to-copy color codes, including CMYK values
 - **Typography**: Complete typography system featuring Lato (primary), Crimson Pro (secondary), and Julius Sans One (logo only)
-- **Logo Guidelines**: Display of all logo variations (colour, light, dark,) with spacing requirements
+- **Logo Guidelines**: Display of all logo variations (colour, light, dark,) with spacing requirements, plus a flat Print & Office logo (CMYK PDF for printers, PNG/SVG for office documents)
 - **Identity Shapes**: Showcase of shapes from negative "X" spaces
 - **Textures & Backgrounds**: Visual guide for texture and background usage
 - **Asset Downloads**: Easy download functionality for all brand assets

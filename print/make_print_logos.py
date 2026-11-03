@@ -2,6 +2,7 @@
 SVG/PNG versions in the matching colour for office documents.
 
 usage: make_print_logos.py <logo.svg> <out_dir>
+  e.g. make_print_logos.py ../assets/Conexus-logo-white.svg ../assets
 
 Approved print colour: C70 M90 Y0 K5 (option G on the test sheet), used flat
 for the whole logo. #5C377D is its sRGB equivalent, for office printing.
